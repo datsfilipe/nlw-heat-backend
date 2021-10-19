@@ -3,6 +3,9 @@ NLW Heat - Backend
 </h1>
 
 <p align="center">The backend of a chat app that's being created at NLW Heat event.</p>
+
+<p align="center">Deployed <a href="https://nlw-heat-backend.herokuapp.com/">here</a>.</p>
+
 <hr>
 
 
