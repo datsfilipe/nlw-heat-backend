@@ -27,6 +27,10 @@ app.use(express.json())
 
 app.use(router)
 
+app.get('/',(request, response) => {
+  response.send('🚀 app online')
+})
+
 app.get('/github', (request, response) => {
   response.redirect(
     `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}`
