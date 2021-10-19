@@ -11,6 +11,7 @@ NLW Heat - Backend
 - [x] Node
 - [x] Express
 - [x] Prisma
+- [x] WebSocket
 - [x] TypeScript
 
 ## Usage
