@@ -1,3 +1,5 @@
 import { serverHttp } from './app'
 
-serverHttp.listen(4000, () => console.log('🚀 app online'))
+const port = process.env.PORT || 8080
+
+serverHttp.listen(port, () => console.log('🚀 app online'))
