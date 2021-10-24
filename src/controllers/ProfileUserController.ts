@@ -4,11 +4,11 @@ import { ProfileUserService } from '../services/ProfileUserService'
 
 class ProfileUserController {
   async handle(request: Request, response: Response) {
-    const { user_id } = request
+    const { id } = request.params
 
     const service = new ProfileUserService()
 
-    const result = await service.execute(user_id)
+    const result = await service.execute(id)
 
     return response.json(result)
   }
