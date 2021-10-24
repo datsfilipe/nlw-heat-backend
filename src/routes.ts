@@ -21,6 +21,6 @@ router.get('/messages/last3', new GetLast3MessagesController().handle)
 
 router.get('/user', ensureAuthenticated, new GetLoggedUserDataController().handle)
 
-router.get('/profile/:id', new ProfileUserController().handle)
+router.get('/profile/:login', new ProfileUserController().handle)
 
 export { router }

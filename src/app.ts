@@ -9,13 +9,13 @@ import { router } from './routes'
 
 const app = express()
 
-app.use(cors())
+app.use(cors({ origin: true, credentials: true }))
 
 const serverHttp = http.createServer(app)
 
 const io = new Server(serverHttp, {
   cors: {
-    origin: 'http://localhost:3000'
+    origin: '*',
   }
 })
 
