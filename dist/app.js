@@ -16,7 +16,7 @@ const serverHttp = http_1.default.createServer(app);
 exports.serverHttp = serverHttp;
 const io = new socket_io_1.Server(serverHttp, {
     cors: {
-        origin: 'http://localhost:3000'
+        origin: '*'
     }
 });
 exports.io = io;
