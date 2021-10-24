@@ -4,7 +4,9 @@ CREATE TABLE "users" (
     "name" TEXT NOT NULL,
     "github_id" INTEGER NOT NULL,
     "avatar_url" TEXT NOT NULL,
-    "login" TEXT NOT NULL
+    "login" TEXT NOT NULL,
+    "description" TEXT,
+    "admin" BOOLEAN NOT NULL DEFAULT false
 );
 
 -- CreateTable
